@@ -1,0 +1,19 @@
+digraph "Partida"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Partida",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" arq" ];
+  Node2 [label="arquivo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classarquivo.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" F" ];
+  Node3 [label="Fantasma",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFantasma.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Personagem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPersonagem.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" labirinto" ];
+  Node5 [label="Labirinto",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLabirinto.html",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" usuario" ];
+  Node6 [label="Pacman",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPacman.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" labirinto" ];
+}

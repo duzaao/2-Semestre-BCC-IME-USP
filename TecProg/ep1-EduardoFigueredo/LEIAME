@@ -1,0 +1,82 @@
+AUTOR:
+
+Nome: Eduardo Figueredo Pacheco
+Nº USP: 13672832
+e-mail: eduardofp@usp.br
+
+
+DESCRIÇÃO:
+
+ - O programa se resume em dois modos de entrada (0 ou 1) em que o usuário pode escolher, e um número em seguida maior que zero.
+ - Enquanto no modo 0, o programa busca qual o próximo número primo daquele número inserido pelo usuário.
+Isso é feito por meio da verificação e da implementação de uma função eh_primo, que verifica se existe algum número menor
+que a raiz quadrada daquele número digitado pelo usuário. É possível observar isso tendo em vista que não existe nenhum número
+maior do que a raiz quadrada de um número que divide ele. Dessa forma, são verificados todos os números menores que a raiz quadrada
+do número inserido por meio da divisão desse número inserido pelas possibilidades (<sqrt).
+Então, no modo zero, temos que cada número +1 é verificado e, quando percebe-se que esse número é primo, é escrito na tela para o usuário.
+- Já no modo 1, são realizadas operações matemáticas para verificar se o número inserido pelo usuário é resultado da multiplicação
+de dois números primos. Para tal, é utilizado o conhecimento matemático de que o primeiro número que divide outro número 
+(por exemplo, 5 é o primeiro número que divide 35), é sempre primo. Isso pode ser provado tendo em vista que o primeiro número que divide
+outro não pode ser combinação de nenhum outro anterior, pois esse ja teria sido verificado antes. Assim, temos um número primo que divide 
+o número, agora basta verificar se o resultado da divisão do número por esse primo encontrado resulta em outro número primo, utilizando a 
+função eh_primo. Assim, fica evidente que a verificação fica mais rápida.  
+- 
+
+
+
+COMO COMPILAR:
+	programa em assembly: 
+	yasm -f elf64 -g dwarf2 assembly.s -o assembly.o
+	ld assembly.o -o assembly
+	./assembly
+
+COMO EXECUTAR:
+
+O comando abaixo é importante para começar a execução do programa
+./assembly
+
+Em seguida basta digitar o modo (um número (0 ou 1)) e um número maior do que zero após o espaço " ".
+
+TESTES:
+
+
+./assembly
+Coloque o modo e um número
+0 12345678
+12345701
+
+./assembly
+Coloque o modo e um número
+1 123
+3 41
+
+./assembly
+Coloque o modo e um número
+0 810888972
+810888997
+
+DEPENDˆENCIAS:
+
+
+	Versão do montador:
+x86_64
+
+	Versão do compilador: 
+gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0
+uname (GNU coreutils) 8.32
+
+	Versão do linker:
+
+
+	Informações do SO:
+ting-system
+GNU/Linux Ubuntu
+
+
+
+
+
+<Informe o que ´e necess´ario para compilar e rodar o programa.
+Informac¸˜oes como: vers˜ao do montador, vers˜ao do compilador, vers˜ao do
+linker, informac¸˜oes do SO onde vocˆe executou e sabe que ele funciona
+s˜ao importantes de serem colocadas aqui>

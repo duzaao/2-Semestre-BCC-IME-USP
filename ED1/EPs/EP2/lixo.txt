@@ -1,0 +1,155 @@
+
+    /* nessa parte vamos passar posição por posição da matriz para tentar colocar as palavras vistas */
+    for (i=0;i<linhas;i++){
+        for(j=0;j<colunas;j++){
+
+            if (tabuleiro[i][j] == 0){
+                ok = 0;
+                modo = -1;
+                *espaco = LugaresVazios_linha(tabuleiro,colunas, i,j,&start); /* pega o vetor de espaços vazios */
+
+
+                for(k = 0; k < num_palavras; k++ )  /* passa por cada uma das palavras */
+                    /* verifica se existe alguma palavra de tamanho exato, que caiba e que ainda não foi usada */
+                    if (strlen(espaco) == tamanho[k] && match(espaco,matriz_de_palavras[k] && s.nao_usadas[k])){ 
+                        s.ultima_palavra = k;
+                        s.nao_usadas = nao_usadas(s.nao_usadas,k);
+                        s.coord_col = j-start;
+                        s.coord_lin = i;
+                        s.modo = 0;
+                        modo = 0;
+                        LIN = s.coord_lin;
+                        COL = s.coord_col;
+                        s.space = espaco;
+                        empilha(p,s);
+                        ok = 1;
+                    }
+
+                    
+
+                for(k = 0; k < num_palavras && !ok; k++ )
+                     if (strlen(espaco) < tamanho[k] && match(espaco,matriz_de_palavras[k] && s.nao_usadas[k])){
+                        s.ultima_palavra = k;
+                        s.nao_usadas = nao_usadas(s.nao_usadas,k);
+                        s.coord_col = j-start;
+                        s.coord_lin = i;
+                        s.modo = 0;
+                        modo = 0;
+                        s.space = espaco;
+                        LIN = s.coord_lin;
+                        COL = s.coord_col;
+                        empilha(p,s);
+                        ok = 1;
+                    
+                    }
+
+                if (modo < 0){
+
+                    *espaco = LugaresVazios_coluna(tabuleiro,colunas, i,j,&start);
+                    for (k=0;k<num_palavras;k++)
+                        if (strlen(espaco) == tamanho[k] && match(espaco,matriz_de_palavras[k] && s.nao_usadas[k])){ 
+                            s.ultima_palavra = k;
+                            s.nao_usadas = nao_usadas(s.nao_usadas,k);
+                            s.coord_col = j-start;
+                            s.coord_lin = i;
+                            s.modo = 0;
+                            modo = 1;
+                            LIN = s.coord_lin;
+                            COL = s.coord_col;
+                            s.space = espaco;
+                            empilha(p,s);
+                            ok = 1;
+                        }
+
+                    for(k = 0; k < num_palavras && !ok; k++ )
+                        if (strlen(espaco) < tamanho[k] && match(espaco,matriz_de_palavras[k] && s.nao_usadas[k])){
+                            s.ultima_palavra = k;
+                            s.nao_usadas = nao_usadas(s.nao_usadas,k);
+                            s.coord_col = j-start;
+                            s.coord_lin = i;
+                            s.modo = 0;
+                            modo = 1;
+                            LIN = s.coord_lin;
+                            COL = s.coord_col;
+                            s.space = espaco;
+                            empilha(p,s);
+                        
+                        }
+                        
+                    
+                }
+
+                if (modo < 0){
+                    
+                    s.space;
+                    desempilha(p);
+
+                }
+
+
+                for(c=0; c<strlen(matriz_de_palavras[k]); c++){
+
+                    tabuleiro[LIN][COL] = matriz_de_palavras[c];
+                    if(modo == 0) COL++;
+                    else LIN++;
+                }
+
+            }
+        }
+    }
+
+
+
+char *LugaresVazios_linha(matriz *tabuleiro, int m ,int linha, int coluna, int *inicio){
+
+    int contador = 0;
+    int x = coluna;
+    char *palavra = malloc(sizeof(char)*256);
+    *inicio =0;
+    char c;
+    int i;
+
+    while (x>=0 && tabuleiro->posicoes[tabuleiro->colunas * linha + x] >= 0){ 
+        if (tabuleiro->posicoes[tabuleiro->colunas * linha + x] >= 0) {continue;}
+        else {printf("%d",x); break;}
+
+        for(i=0;i<=contador; i++){
+            palavra[i+1] = palavra[i];
+        }
+        palavra[0] = c;
+        contador++;
+        x--;
+        *inicio ++;
+    }
+    x = coluna+1;
+    while (x<(m) && tabuleiro->posicoes[tabuleiro->colunas * linha + x] >= 0){
+        if (tabuleiro->posicoes[tabuleiro->colunas * linha + x] == 0) c = 0;
+        else c = tabuleiro->posicoes[tabuleiro->colunas * linha + x];
+        palavra[contador++] = c;
+        
+        x++;
+    }
+
+    if (contador < 2) return 0;
+    return palavra; /* e o FREE(palavra) ?? */
+
+}
+
+
+
+
+
+    for (i=0;i<linhas;i++){
+        for(j=0;j<colunas;j++){
+
+            printf("%c", retorna(&tabuleiro,i,j));
+            if (retorna(&tabuleiro,i,j) == '0'){
+                a=i;
+                b=j;      
+               espaco = LugaresVazios_linha(&tabuleiro, colunas, linhas, i,j,matriz_de_palavras,num_palavras,tamanho);
+               printf("esse é o espaço da posição (%d,%d) : %s \n",i,j, espaco);
+               printf("esse é o inicio: %d \n", start);
+            }
+
+        }
+    }

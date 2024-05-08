@@ -1,0 +1,211 @@
+\hypertarget{classPersonagem}{}\doxysection{Personagem Class Reference}
+\label{classPersonagem}\index{Personagem@{Personagem}}
+
+
+Inheritance diagram for Personagem\+:
+% FIG 0
+
+
+Collaboration diagram for Personagem\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPersonagem_a6d427fce9b96ddd609d6696418423254}{Personagem}} (\mbox{\hyperlink{classLabirinto}{Labirinto}} $\ast$labirinto, int x, int y, char tipo, int status)
+\begin{DoxyCompactList}\small\item\em Constructor\+: \mbox{\hyperlink{classPersonagem}{Personagem}} Uso\+: usuario = \mbox{\hyperlink{classPersonagem}{Personagem(labirinto,x, y, char tipo, status)}};. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPersonagem_a173c15f20799967d9b2acc5e6197b2b0}\label{classPersonagem_a173c15f20799967d9b2acc5e6197b2b0}} 
+\mbox{\hyperlink{classPersonagem_a173c15f20799967d9b2acc5e6197b2b0}{$\sim$\+Personagem}} ()
+\begin{DoxyCompactList}\small\item\em Destructor\+: $\sim$\+Personagem Uso\+: \mbox{\hyperlink{classPersonagem_a173c15f20799967d9b2acc5e6197b2b0}{$\sim$\+Personagem()}}; Nessa função é possível destruir a classe \mbox{\hyperlink{classPersonagem}{Personagem}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPersonagem_af4789e791f337f3e965f8f00a6f882cc}{getX}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: getX Uso\+: x = \mbox{\hyperlink{classPersonagem_af4789e791f337f3e965f8f00a6f882cc}{get\+X()}}; Essa função devolve a linha que se encontra aquele personagem no labirinto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPersonagem_a0dc1db20aff5a6169af4c8ce47ffd40a}{getY}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: getY Uso\+: x = \mbox{\hyperlink{classPersonagem_a0dc1db20aff5a6169af4c8ce47ffd40a}{get\+Y()}}; Essa função devolve a coluna que se encontra aquele personagem no labirinto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPersonagem_ab335b35ed247e2006636d00781be9e7a}{set\+\_\+posicao}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Função\+: set\+\_\+posicao Uso\+: set\+\_\+posicao( x,  y);. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPersonagem_a48cbb2fca5f9936cb007a034acc2b1b5}{get\+\_\+status}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: get\+\_\+status Uso\+: x = \mbox{\hyperlink{classPersonagem_a48cbb2fca5f9936cb007a034acc2b1b5}{get\+\_\+status()}}; Essa função retorna o status do personagem. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPersonagem_ad3973a0ceec8fe0511b8cdd258cd7460}{eh\+\_\+parede}} (char direction)
+\begin{DoxyCompactList}\small\item\em Função\+: eh\+\_\+parede Uso\+: x = eh\+\_\+parede(direction);. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPersonagem_ab6faa27cd36deb3cd47884d71bb26edd}{mod}} (int numero, int delimitador)
+\begin{DoxyCompactList}\small\item\em Função\+: mod Uso\+: x = mod(numero, delimitador); Essa função impede do personagem sair do tabuleiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPersonagem_afa092107c9005a1247a178c148dc0bd3}{set\+\_\+status}} (int status)
+\begin{DoxyCompactList}\small\item\em Função\+: set\+\_\+status Uso\+: set\+\_\+status(status); Essa função impede do personagem sair do tabuleiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPersonagem_a3a7fdfddff128dd300acc63f9bed284a}{move\+\_\+pers}} (char caractere)
+\begin{DoxyCompactList}\small\item\em Função\+: move\+\_\+pers Uso\+: move\+\_\+pers(caractere); Essa função impede do personagem sair do tabuleiro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPersonagem_a5c7bd13aded3d5cf83a86fc6b79ea70c}\label{classPersonagem_a5c7bd13aded3d5cf83a86fc6b79ea70c}} 
+int {\bfseries x}
+\item 
+\mbox{\Hypertarget{classPersonagem_adbb29a4571f7549e616da3d3b1f319dc}\label{classPersonagem_adbb29a4571f7549e616da3d3b1f319dc}} 
+int {\bfseries y}
+\item 
+\mbox{\Hypertarget{classPersonagem_a345ec9ee8feae3fdce21a67c048849ea}\label{classPersonagem_a345ec9ee8feae3fdce21a67c048849ea}} 
+int {\bfseries status}
+\item 
+\mbox{\Hypertarget{classPersonagem_af7606d05a3dc916d2290910e695d46fc}\label{classPersonagem_af7606d05a3dc916d2290910e695d46fc}} 
+char {\bfseries tipo}
+\item 
+\mbox{\Hypertarget{classPersonagem_a96ffb962a177133e300eea1351c2ef72}\label{classPersonagem_a96ffb962a177133e300eea1351c2ef72}} 
+\mbox{\hyperlink{classLabirinto}{Labirinto}} $\ast$ {\bfseries labirinto}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPersonagem_a6d427fce9b96ddd609d6696418423254}\label{classPersonagem_a6d427fce9b96ddd609d6696418423254}} 
+\index{Personagem@{Personagem}!Personagem@{Personagem}}
+\index{Personagem@{Personagem}!Personagem@{Personagem}}
+\doxysubsubsection{\texorpdfstring{Personagem()}{Personagem()}}
+{\footnotesize\ttfamily Personagem\+::\+Personagem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLabirinto}{Labirinto}} $\ast$}]{labirinto,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{tipo,  }\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Constructor\+: \mbox{\hyperlink{classPersonagem}{Personagem}} Uso\+: usuario = \mbox{\hyperlink{classPersonagem}{Personagem(labirinto,x, y, char tipo, status)}};. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em labirinto} & \+: (Labirinto$\ast$) Essa função recebe como parâmetro um ponteiro para o labirinto \\
+\hline
+{\em x} & \+: (int) Essa função recebe como parâmetro um inteiro referente a posição do personagem no mapa \\
+\hline
+{\em y} & \+: (int) Essa função recebe como parâmetro um inteiro referente a posição do personagem no mapa \\
+\hline
+{\em tipo} & \+: (char) Essa função recebe como parâmetro um caractere referente ao tipo do personagem (se é fantasma ou pacman) \\
+\hline
+{\em status} & \+: (int) Essa função recebe como parâmetro um inteiro referente ao status do personagem Nesse Constructor é possível receber a classe \mbox{\hyperlink{classPersonagem}{Personagem}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPersonagem_ad3973a0ceec8fe0511b8cdd258cd7460}\label{classPersonagem_ad3973a0ceec8fe0511b8cdd258cd7460}} 
+\index{Personagem@{Personagem}!eh\_parede@{eh\_parede}}
+\index{eh\_parede@{eh\_parede}!Personagem@{Personagem}}
+\doxysubsubsection{\texorpdfstring{eh\_parede()}{eh\_parede()}}
+{\footnotesize\ttfamily int Personagem\+::eh\+\_\+parede (\begin{DoxyParamCaption}\item[{char}]{direction }\end{DoxyParamCaption})}
+
+
+
+Função\+: eh\+\_\+parede Uso\+: x = eh\+\_\+parede(direction);. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \+: (char) Essa função recebe a direção que o personagem quer se mover \textquotesingle{}wasd\textquotesingle{} Essa função é responsável por retornar se a posição que o personagem quer ir é valida ou não. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorno\+: (int) 1 caso o lugar que o usuário está se intensionando a ir seja inválido e (int) 0 caso eteja livre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersonagem_a48cbb2fca5f9936cb007a034acc2b1b5}\label{classPersonagem_a48cbb2fca5f9936cb007a034acc2b1b5}} 
+\index{Personagem@{Personagem}!get\_status@{get\_status}}
+\index{get\_status@{get\_status}!Personagem@{Personagem}}
+\doxysubsubsection{\texorpdfstring{get\_status()}{get\_status()}}
+{\footnotesize\ttfamily int Personagem\+::get\+\_\+status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função\+: get\+\_\+status Uso\+: x = \mbox{\hyperlink{classPersonagem_a48cbb2fca5f9936cb007a034acc2b1b5}{get\+\_\+status()}}; Essa função retorna o status do personagem. 
+
+\begin{DoxyReturn}{Returns}
+retorno\+: (int) retorna o status do personagem 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersonagem_af4789e791f337f3e965f8f00a6f882cc}\label{classPersonagem_af4789e791f337f3e965f8f00a6f882cc}} 
+\index{Personagem@{Personagem}!getX@{getX}}
+\index{getX@{getX}!Personagem@{Personagem}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Personagem\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função\+: getX Uso\+: x = \mbox{\hyperlink{classPersonagem_af4789e791f337f3e965f8f00a6f882cc}{get\+X()}}; Essa função devolve a linha que se encontra aquele personagem no labirinto. 
+
+\begin{DoxyReturn}{Returns}
+retorno\+: (int) retorna a posição da linha do personagem no mapa 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersonagem_a0dc1db20aff5a6169af4c8ce47ffd40a}\label{classPersonagem_a0dc1db20aff5a6169af4c8ce47ffd40a}} 
+\index{Personagem@{Personagem}!getY@{getY}}
+\index{getY@{getY}!Personagem@{Personagem}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Personagem\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função\+: getY Uso\+: x = \mbox{\hyperlink{classPersonagem_a0dc1db20aff5a6169af4c8ce47ffd40a}{get\+Y()}}; Essa função devolve a coluna que se encontra aquele personagem no labirinto. 
+
+\begin{DoxyReturn}{Returns}
+retorno\+: (int) retorna a posição da coluna do personagem no mapa 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersonagem_ab6faa27cd36deb3cd47884d71bb26edd}\label{classPersonagem_ab6faa27cd36deb3cd47884d71bb26edd}} 
+\index{Personagem@{Personagem}!mod@{mod}}
+\index{mod@{mod}!Personagem@{Personagem}}
+\doxysubsubsection{\texorpdfstring{mod()}{mod()}}
+{\footnotesize\ttfamily int Personagem\+::mod (\begin{DoxyParamCaption}\item[{int}]{numero,  }\item[{int}]{delimitador }\end{DoxyParamCaption})}
+
+
+
+Função\+: mod Uso\+: x = mod(numero, delimitador); Essa função impede do personagem sair do tabuleiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero} & \+: (int) Essa função recebe um inteiro referente a posição que se deseja analisar \\
+\hline
+{\em delimitador} & \+: (int) Essa função recebe um inteiro referente aos delimitadores do tabuleiro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorno\+: (int) retorna o módulo do número que estiver fora do tabuleiro, garantindo que sempre esteja dentro do tabuleiro 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPersonagem_a3a7fdfddff128dd300acc63f9bed284a}\label{classPersonagem_a3a7fdfddff128dd300acc63f9bed284a}} 
+\index{Personagem@{Personagem}!move\_pers@{move\_pers}}
+\index{move\_pers@{move\_pers}!Personagem@{Personagem}}
+\doxysubsubsection{\texorpdfstring{move\_pers()}{move\_pers()}}
+{\footnotesize\ttfamily void Personagem\+::move\+\_\+pers (\begin{DoxyParamCaption}\item[{char}]{caractere }\end{DoxyParamCaption})}
+
+
+
+Função\+: move\+\_\+pers Uso\+: move\+\_\+pers(caractere); Essa função impede do personagem sair do tabuleiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caractere} & \+: (char) Essa função recebe um char referente a posição que se deseja movimentar o personagem \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersonagem_ab335b35ed247e2006636d00781be9e7a}\label{classPersonagem_ab335b35ed247e2006636d00781be9e7a}} 
+\index{Personagem@{Personagem}!set\_posicao@{set\_posicao}}
+\index{set\_posicao@{set\_posicao}!Personagem@{Personagem}}
+\doxysubsubsection{\texorpdfstring{set\_posicao()}{set\_posicao()}}
+{\footnotesize\ttfamily void Personagem\+::set\+\_\+posicao (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Função\+: set\+\_\+posicao Uso\+: set\+\_\+posicao( x,  y);. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: (int) Essa função recebe um inteiro referente a posição da coluna do personagem no mapa \\
+\hline
+{\em y} & \+: (int) Essa função recebe um inteiro referente a posição da linha do personagem no mapa Essa função é responsável por atualizar a posição do personagem no mapa \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPersonagem_afa092107c9005a1247a178c148dc0bd3}\label{classPersonagem_afa092107c9005a1247a178c148dc0bd3}} 
+\index{Personagem@{Personagem}!set\_status@{set\_status}}
+\index{set\_status@{set\_status}!Personagem@{Personagem}}
+\doxysubsubsection{\texorpdfstring{set\_status()}{set\_status()}}
+{\footnotesize\ttfamily void Personagem\+::set\+\_\+status (\begin{DoxyParamCaption}\item[{int}]{status }\end{DoxyParamCaption})}
+
+
+
+Função\+: set\+\_\+status Uso\+: set\+\_\+status(status); Essa função impede do personagem sair do tabuleiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & \+: (int) Essa função recebe um inteiro referente o status do personagem \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+personagem.\+h\item 
+personagem.\+cpp\end{DoxyCompactItemize}

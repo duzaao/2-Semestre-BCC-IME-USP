@@ -1,0 +1,75 @@
+AUTOR:
+
+Nome: Eduardo Figueredo Pacheco
+Nº USP: 13672832
+e-mail: eduardofp@usp.br
+
+
+DESCRIÇÃO:
+
+    Esse exercício programa tem a funcionalidade da criação de duas bibliotecas que podem ser utilizadas pelo usuário, sendo uma delas uma biblioteca 
+estática e outra delas uma biblioteca dinâmica; 
+    De modo que ambas tem suas funcionalidades, como pro exemplo a biblioteca libpropriedadesnumericas.a é uma biblioteca estática que
+faz manipulações matemáticas para encontrar a paridade de um número, se esse número é primo, se ele é um quadrado perfeito, cubo perfeito, entre outros.
+    De maneira parecida, também temos a biblioteca dinâmica libvetoraleatorio.so e nela existe a função que cria um vetor com N números aleatórios, 
+no qual N é um dos parâmetros da função.
+    Enquanto as bibliotecas estáticas estão embutidas no arquivo, aumentando o seu tamanho consideravelmente, as bibliotecas dinâmicas são armazenadas
+a parte em outro arquivo e carregadas em tempode execução, não exigindo um aumento considerável de memória.
+
+COMO EXECUTAR:
+
+Para executar esse exercício programa, deve-se apenas utilizar o comando em bash "./compila.sh" e então as bibliotecas serão criadas e testadas.
+para instalar o doxygen, basta utilizar o comando no linux "sudo apt install doxygen"
+
+TESTES:
+
+O testa.c é um arquivo cujo objetivo é de realizar testes, verificando o tempo de execução e a precisão das bibliotecas criadas, desse modo, 
+ele realiza diversos testes com números distintos e situações divergentes.
+Para calcular o tempo de execução de uma função das bibiliotecas testadas, foi utilizada a função clock() da biblioteca <time.h>.
+
+Segue um exemplo de teste, em que um número aleatório foi escolhido e, então testado em todas as funções criadas.
+
+
+---> 709640913966518229
+ehpar: 0
+ehprimo: 0
+ehcubo: 0
+ehfatorial: 0
+ehFibonacci: 0
+ehQuadrado: 0
+
+
+ ---> 1528108405744583338
+ehpar: 1
+ehprimo: 0
+ehcubo: 0
+ehfatorial: 0
+ehFibonacci: 0
+ehQuadrado: 0
+
+ ---> 144
+ehpar: 1
+ehprimo: 0
+ehcubo: 0
+ehfatorial: 0
+ehFibonacci: 1
+ehQuadrado: 1
+
+Que demonstram que as funções estão funcionando de maneira correta.
+
+
+
+DEPENDˆENCIAS:
+
+
+	Versão do montador:
+            x86_64
+
+	Versão do compilador: 
+            gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0
+            uname (GNU coreutils) 8.32
+
+	Informações do SO:
+            ting-system
+            GNU/Linux Ubuntu
+

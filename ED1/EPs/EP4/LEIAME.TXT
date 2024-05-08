@@ -1,0 +1,13 @@
+Nome: Eduardo Figueredo Pacheco
+
+EP4: Indice Remissivo 
+
+Compilar: 
+
+    Para relizar a compilação do EP foi utilizado o seguinte código em bash:
+     gcc -ansi -Wall -g -pedantic -O2 -o ep4 ep4.c abb.c arv.c
+
+Executar: 
+
+    Para a execução do programa basta alterar o arquivo do input.txt e utilizar o código no terminal da pasta:
+    ./ep4

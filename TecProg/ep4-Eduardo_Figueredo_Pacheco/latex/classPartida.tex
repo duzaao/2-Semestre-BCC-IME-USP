@@ -1,0 +1,83 @@
+\hypertarget{classPartida}{}\doxysection{Partida Class Reference}
+\label{classPartida}\index{Partida@{Partida}}
+
+
+Collaboration diagram for Partida\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPartida_af64ad684095abc07b6b9423745872f28}\label{classPartida_af64ad684095abc07b6b9423745872f28}} 
+\mbox{\hyperlink{classPartida_af64ad684095abc07b6b9423745872f28}{Partida}} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: \mbox{\hyperlink{classPartida}{Partida}} Uso\+: usuario = \mbox{\hyperlink{classPartida_af64ad684095abc07b6b9423745872f28}{Partida()}}; Nesse Constructor é possível receber a classe \mbox{\hyperlink{classPartida}{Partida}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPartida_a5ef6ab2a8173c55fa9ad829acc12287a}{get\+Acabou}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: get\+Acabou Uso\+: c = \mbox{\hyperlink{classPartida_a5ef6ab2a8173c55fa9ad829acc12287a}{get\+Acabou()}}; Nessa função é possível receber o resultado da variavel \char`\"{}acabou\char`\"{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPartida_a7b2b4aa6f06e276ede25f6d3782b46c5}{set\+Acabou}} (int x)
+\begin{DoxyCompactList}\small\item\em Função\+: set\+Acabou Uso\+: c = set\+Acabou(x);. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPartida_a2bbd874ef3911449b4bc56959db12a26}\label{classPartida_a2bbd874ef3911449b4bc56959db12a26}} 
+void \mbox{\hyperlink{classPartida_a2bbd874ef3911449b4bc56959db12a26}{sentido\+\_\+\+Pacman}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: sentido\+\_\+\+Pacman Uso\+: entido\+\_\+\+Pacman(); Nessa função é utilizada para de fato garantir que o fantasma se mova e que se contem os pacdots caso ele passe por um. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPartida_a28bff22ca2037c16e61143fa0709a7a5}\label{classPartida_a28bff22ca2037c16e61143fa0709a7a5}} 
+void \mbox{\hyperlink{classPartida_a28bff22ca2037c16e61143fa0709a7a5}{imprime\+Mapa}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: imprime\+Mapa Uso\+: \mbox{\hyperlink{classPartida_a28bff22ca2037c16e61143fa0709a7a5}{imprime\+Mapa()}}; Nessa função é possível imprimir o mapa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPartida_afd8d7207d7358acdeb71fed28471fc82}\label{classPartida_afd8d7207d7358acdeb71fed28471fc82}} 
+void \mbox{\hyperlink{classPartida_afd8d7207d7358acdeb71fed28471fc82}{sentido\+\_\+\+Fantasma}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: sentido\+\_\+\+Fantasma Uso\+: \mbox{\hyperlink{classPartida_afd8d7207d7358acdeb71fed28471fc82}{sentido\+\_\+\+Fantasma()}}; Essa função garante o movimento dos fantasmas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPartida_a1503fde98b9d8e843c01d51a11abcccb}\label{classPartida_a1503fde98b9d8e843c01d51a11abcccb}} 
+int {\bfseries get\+\_\+pacdots} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPartida_ad49c36a57a1a1f80fede04d0d6471a73}\label{classPartida_ad49c36a57a1a1f80fede04d0d6471a73}} 
+\mbox{\hyperlink{classLabirinto}{Labirinto}} $\ast$ {\bfseries labirinto}
+\item 
+\mbox{\Hypertarget{classPartida_aac937c0c88fd70a6574f9d781b655305}\label{classPartida_aac937c0c88fd70a6574f9d781b655305}} 
+\mbox{\hyperlink{classPacman}{Pacman}} $\ast$ {\bfseries usuario}
+\item 
+\mbox{\Hypertarget{classPartida_aa406e1f2470ea5d11074666e0755be24}\label{classPartida_aa406e1f2470ea5d11074666e0755be24}} 
+\mbox{\hyperlink{classFantasma}{Fantasma}} $\ast$$\ast$ {\bfseries F}
+\item 
+\mbox{\Hypertarget{classPartida_a734a2b5b04e90eda33c5675130802000}\label{classPartida_a734a2b5b04e90eda33c5675130802000}} 
+\mbox{\hyperlink{classarquivo}{arquivo}} $\ast$ {\bfseries arq}
+\item 
+\mbox{\Hypertarget{classPartida_ae5a2406337af7262c6932fc3bc695d7f}\label{classPartida_ae5a2406337af7262c6932fc3bc695d7f}} 
+int {\bfseries acabou}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPartida_a5ef6ab2a8173c55fa9ad829acc12287a}\label{classPartida_a5ef6ab2a8173c55fa9ad829acc12287a}} 
+\index{Partida@{Partida}!getAcabou@{getAcabou}}
+\index{getAcabou@{getAcabou}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{getAcabou()}{getAcabou()}}
+{\footnotesize\ttfamily int Partida\+::get\+Acabou (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função\+: get\+Acabou Uso\+: c = \mbox{\hyperlink{classPartida_a5ef6ab2a8173c55fa9ad829acc12287a}{get\+Acabou()}}; Nessa função é possível receber o resultado da variavel \char`\"{}acabou\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+retorno\+: Retorna (int) o resultado da variavel \char`\"{}acabou\char`\"{} e é utilizado como argumento de parada do loop principal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPartida_a7b2b4aa6f06e276ede25f6d3782b46c5}\label{classPartida_a7b2b4aa6f06e276ede25f6d3782b46c5}} 
+\index{Partida@{Partida}!setAcabou@{setAcabou}}
+\index{setAcabou@{setAcabou}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{setAcabou()}{setAcabou()}}
+{\footnotesize\ttfamily void Partida\+::set\+Acabou (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Função\+: set\+Acabou Uso\+: c = set\+Acabou(x);. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: (int) Essa função recebe um numero que indica se o jogo acabou ou não; (int) 1 para se o jogo acabou porque o fantasma achou o \mbox{\hyperlink{classPacman}{Pacman}}, (int) 2 se o \mbox{\hyperlink{classPacman}{Pacman}} colheu todas as bolinhas, e (int) 0 caso o jogo não tenha acabado Nessa função é possível mudar a posição da variavel \char`\"{}acabou\char`\"{} que é usada como variável de parada do loop principal do jogo \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+partida.\+h\item 
+partida.\+cpp\end{DoxyCompactItemize}

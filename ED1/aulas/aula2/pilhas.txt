@@ -1,0 +1,5 @@
+aloca a matriz dinamicamente:
+
+int ** alocaMatriz (int lin, int col) {
+
+    }

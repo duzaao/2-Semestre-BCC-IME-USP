@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/eduardo/Desktop/2_Semestre/TecProg/ep4-Eduardo_Figueredo_Pacheco",
+            "binaryPath": "/home/eduardo/Desktop/2_Semestre/TecProg/ep4-Eduardo_Figueredo_Pacheco/ep4",
+            "binaryArgs": []
+        }
+    ]
+}

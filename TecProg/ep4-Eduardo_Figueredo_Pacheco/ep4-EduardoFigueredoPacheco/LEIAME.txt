@@ -1,0 +1,34 @@
+AUTOR:
+
+Nome: Eduardo Figueredo Pacheco
+Nº USP: 13672832
+e-mail: eduardofp@usp.br
+
+
+DESCRIÇÃO:
+
+    Esse exercício programa tem a funcionalidade da criação de um jogo estilo PAcman para terminal utilizando programação orientada a objetos.
+     Além da realização de testes sobre o programa.
+
+
+COMO EXECUTAR:
+
+Para executar esse exercício programa, deve-se apenas utilizar o comando 'make' no terminal, que será responsável por compilar todos os arquivos necessários para esse trabalho.
+
+TESTES:
+
+    Alguns testes foram feitos nesse EP, como o que garante que no tabuleiro a quantidade d elinhas e colunas sejam maiores que zero
+
+DEPENDˆENCIAS:
+
+
+	Versão do montador:
+            x86_64
+
+	Versão do compilador: 
+            gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0
+            uname (GNU coreutils) 8.32
+
+	Informações do SO:
+            ting-system
+            GNU/Linux Ubuntu

@@ -1,0 +1,102 @@
+\hypertarget{classPacman}{}\doxysection{Pacman Class Reference}
+\label{classPacman}\index{Pacman@{Pacman}}
+
+
+Inheritance diagram for Pacman\+:
+% FIG 0
+
+
+Collaboration diagram for Pacman\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPacman_af8e992a612d9961e8778c60505fd81a8}{Pacman}} (\mbox{\hyperlink{classLabirinto}{Labirinto}} $\ast$labirinto, int y, int x)
+\begin{DoxyCompactList}\small\item\em Constructor\+: \mbox{\hyperlink{classPacman}{Pacman}} Uso\+: usuario = \mbox{\hyperlink{classPacman}{Pacman(labirinto,x, y)}};. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPacman_aeeb4fea54918576dbdf20a1f325410bf}\label{classPacman_aeeb4fea54918576dbdf20a1f325410bf}} 
+\mbox{\hyperlink{classPacman_aeeb4fea54918576dbdf20a1f325410bf}{$\sim$\+Pacman}} ()
+\begin{DoxyCompactList}\small\item\em Destructor\+: $\sim$\+Pacman Uso\+: \mbox{\hyperlink{classPacman_aeeb4fea54918576dbdf20a1f325410bf}{$\sim$\+Pacman()}}; Nessa função é possível destruir a classe \mbox{\hyperlink{classPacman}{Pacman}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPacman_aa924394ce32df933f3d60b3ddb0da723}{ganhou}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: ganhou Uso\+: x = \mbox{\hyperlink{classPacman_aa924394ce32df933f3d60b3ddb0da723}{ganhou()}};. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPacman_af31aa4e9536e406844d07231942bbfd3}{soma\+Bolinhas}} (int proximo\+\_\+y, int proximo\+\_\+x)
+\begin{DoxyCompactList}\small\item\em Função\+: soma\+Bolinhas Uso\+: soma\+Bolinhas( x, y);. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPacman_a1d28b46e8ec91d77162dcb5aa1f227ca}\label{classPacman_a1d28b46e8ec91d77162dcb5aa1f227ca}} 
+void \mbox{\hyperlink{classPacman_a1d28b46e8ec91d77162dcb5aa1f227ca}{zera\+Bolinhas}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: zera\+Bolinhas Uso\+: \mbox{\hyperlink{classPacman_a1d28b46e8ec91d77162dcb5aa1f227ca}{zera\+Bolinhas()}}; Nessa função é possível zerar a quantidade de bolinhas coletadas pelo \mbox{\hyperlink{classPacman}{Pacman}}, para que ,então o jogo possa começar. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPacman_ab0bd4e205b45711f89319cf96bf811a5}{get\+Bolinhas}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: get\+Bolinhas Uso\+: c = \mbox{\hyperlink{classPacman_ab0bd4e205b45711f89319cf96bf811a5}{get\+Bolinhas()}}; Nessa função é possível saber quantas bolinhas foram coletadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPacman_af8e992a612d9961e8778c60505fd81a8}\label{classPacman_af8e992a612d9961e8778c60505fd81a8}} 
+\index{Pacman@{Pacman}!Pacman@{Pacman}}
+\index{Pacman@{Pacman}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{Pacman()}{Pacman()}}
+{\footnotesize\ttfamily Pacman\+::\+Pacman (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLabirinto}{Labirinto}} $\ast$}]{labirinto,  }\item[{int}]{y,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Constructor\+: \mbox{\hyperlink{classPacman}{Pacman}} Uso\+: usuario = \mbox{\hyperlink{classPacman}{Pacman(labirinto,x, y)}};. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em labirinto} & \+: (Labirinto$\ast$) Essa função recebe como parâmetro um ponteiro para o labirinto \\
+\hline
+{\em x} & \+: (int) Essa função recebe como parâmetro um inteiro referente a posição do \mbox{\hyperlink{classPacman}{Pacman}} no mapa \\
+\hline
+{\em y} & \+: (int) Essa função recebe como parâmetro um inteiro referente a posição do \mbox{\hyperlink{classPacman}{Pacman}} no mapa Nesse Constructor é possível receber a classe \mbox{\hyperlink{classPacman}{Pacman}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPacman_aa924394ce32df933f3d60b3ddb0da723}\label{classPacman_aa924394ce32df933f3d60b3ddb0da723}} 
+\index{Pacman@{Pacman}!ganhou@{ganhou}}
+\index{ganhou@{ganhou}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{ganhou()}{ganhou()}}
+{\footnotesize\ttfamily int Pacman\+::ganhou (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função\+: ganhou Uso\+: x = \mbox{\hyperlink{classPacman_aa924394ce32df933f3d60b3ddb0da723}{ganhou()}};. 
+
+\begin{DoxyReturn}{Returns}
+retorno\+: Retorna (int) 1 caso o jogo tenha acabado pois o pacman pegou todos os pacdots e (int) 0 caso contrário 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPacman_ab0bd4e205b45711f89319cf96bf811a5}\label{classPacman_ab0bd4e205b45711f89319cf96bf811a5}} 
+\index{Pacman@{Pacman}!getBolinhas@{getBolinhas}}
+\index{getBolinhas@{getBolinhas}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{getBolinhas()}{getBolinhas()}}
+{\footnotesize\ttfamily int Pacman\+::get\+Bolinhas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função\+: get\+Bolinhas Uso\+: c = \mbox{\hyperlink{classPacman_ab0bd4e205b45711f89319cf96bf811a5}{get\+Bolinhas()}}; Nessa função é possível saber quantas bolinhas foram coletadas. 
+
+\begin{DoxyReturn}{Returns}
+retorno\+: Retorna (int) o número de bolinhas coletadas pelo usuário (\mbox{\hyperlink{classPacman}{Pacman}}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPacman_af31aa4e9536e406844d07231942bbfd3}\label{classPacman_af31aa4e9536e406844d07231942bbfd3}} 
+\index{Pacman@{Pacman}!somaBolinhas@{somaBolinhas}}
+\index{somaBolinhas@{somaBolinhas}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{somaBolinhas()}{somaBolinhas()}}
+{\footnotesize\ttfamily void Pacman\+::soma\+Bolinhas (\begin{DoxyParamCaption}\item[{int}]{proximo\+\_\+y,  }\item[{int}]{proximo\+\_\+x }\end{DoxyParamCaption})}
+
+
+
+Função\+: soma\+Bolinhas Uso\+: soma\+Bolinhas( x, y);. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em proximo\+\_\+y} & \+: Essa função recebe como parâmetro a próxima posição y do pacman para, se houver pacdot lá, que ele seja adicionado. \\
+\hline
+{\em proximo\+\_\+x} & \+: Essa função recebe como parâmetro a próxima posição x do pacman para, se houver pacdot lá, que ele seja adicionado. Nessa função é possível contar a mais, cada vez que o pacman passa por um pac\+Dot \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pacman.\+h\item 
+pacman.\+cpp\end{DoxyCompactItemize}

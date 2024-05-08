@@ -1,0 +1,120 @@
+\hypertarget{classFantasma}{}\doxysection{Fantasma Class Reference}
+\label{classFantasma}\index{Fantasma@{Fantasma}}
+
+
+Inheritance diagram for Fantasma\+:
+% FIG 0
+
+
+Collaboration diagram for Fantasma\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFantasma_a9c49c82114da6e12b9842a135702ea16}{Fantasma}} (\mbox{\hyperlink{classLabirinto}{Labirinto}} $\ast$labirinto, int x, int y)
+\begin{DoxyCompactList}\small\item\em Função\+: \mbox{\hyperlink{classFantasma}{Fantasma}} Uso\+: arq = \mbox{\hyperlink{classFantasma}{Fantasma(labirinto,x, y)}};. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFantasma_af3b76e214b90deb3bcbe6dd3e800a1f4}\label{classFantasma_af3b76e214b90deb3bcbe6dd3e800a1f4}} 
+\mbox{\hyperlink{classFantasma_af3b76e214b90deb3bcbe6dd3e800a1f4}{$\sim$\+Fantasma}} ()
+\begin{DoxyCompactList}\small\item\em Destructor\+: $\sim$\+Fantasma Uso\+: \mbox{\hyperlink{classFantasma_af3b76e214b90deb3bcbe6dd3e800a1f4}{$\sim$\+Fantasma()}}; Nessa função é possível destruir a classe \mbox{\hyperlink{classFantasma}{Fantasma}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFantasma_ada4b120b7f6ca9e3d6effd9faf2f7279}{move\+\_\+fantasma}} (char caractere)
+\begin{DoxyCompactList}\small\item\em Função\+: move\+\_\+fantasma Uso\+: c = move\+\_\+fantasma( x, y);. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classFantasma_a66b306ef40c826b443d40cf33d11c02d}\label{classFantasma_a66b306ef40c826b443d40cf33d11c02d}} 
+void \mbox{\hyperlink{classFantasma_a66b306ef40c826b443d40cf33d11c02d}{move\+Aleatorio}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: move\+Aleatorio Uso\+: \mbox{\hyperlink{classFantasma_a66b306ef40c826b443d40cf33d11c02d}{move\+Aleatorio()}}; Essa função faz com que o movimento do fantasma seja aleatorizado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFantasma_a9cd407134e364089766a1b6acc8c4e9a}{set\+Elemento}} (char elemento)
+\begin{DoxyCompactList}\small\item\em Função\+: set\+Elemento Uso\+: set\+Elemento(elemento);. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classFantasma_a7bdbdd48e9e5660267ea4d9bc12f4b3c}{get\+Elemento}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: get\+Elemento Uso\+: c = \mbox{\hyperlink{classFantasma_a7bdbdd48e9e5660267ea4d9bc12f4b3c}{get\+Elemento()}};. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classFantasma_a74b4884540cae21acefc4c827254315f}{conta\+Caminhos}} ()
+\begin{DoxyCompactList}\small\item\em Função\+: conta\+Caminhos Uso\+: c = \mbox{\hyperlink{classFantasma_a74b4884540cae21acefc4c827254315f}{conta\+Caminhos()}};. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFantasma_a9c49c82114da6e12b9842a135702ea16}\label{classFantasma_a9c49c82114da6e12b9842a135702ea16}} 
+\index{Fantasma@{Fantasma}!Fantasma@{Fantasma}}
+\index{Fantasma@{Fantasma}!Fantasma@{Fantasma}}
+\doxysubsubsection{\texorpdfstring{Fantasma()}{Fantasma()}}
+{\footnotesize\ttfamily Fantasma\+::\+Fantasma (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classLabirinto}{Labirinto}} $\ast$}]{labirinto,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Função\+: \mbox{\hyperlink{classFantasma}{Fantasma}} Uso\+: arq = \mbox{\hyperlink{classFantasma}{Fantasma(labirinto,x, y)}};. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em labirinto} & \+: (Labirinto$\ast$) Essa função recebe um ponteiro para o labirinto do jogo \\
+\hline
+{\em x} & \+: (int) Essa função recebe a posição de colunas do fantasma no mapa \\
+\hline
+{\em y} & \+: (int) Essa função recebe a posição de linhas do fantasma no mapa Nessa função é possível receber a classe \mbox{\hyperlink{classFantasma}{Fantasma}} (constructor) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFantasma_a74b4884540cae21acefc4c827254315f}\label{classFantasma_a74b4884540cae21acefc4c827254315f}} 
+\index{Fantasma@{Fantasma}!contaCaminhos@{contaCaminhos}}
+\index{contaCaminhos@{contaCaminhos}!Fantasma@{Fantasma}}
+\doxysubsubsection{\texorpdfstring{contaCaminhos()}{contaCaminhos()}}
+{\footnotesize\ttfamily int Fantasma\+::conta\+Caminhos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função\+: conta\+Caminhos Uso\+: c = \mbox{\hyperlink{classFantasma_a74b4884540cae21acefc4c827254315f}{conta\+Caminhos()}};. 
+
+\begin{DoxyReturn}{Returns}
+retorno\+: (int) Retorna a quantidade de caminhos possíveis que o fantasma pode ir 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFantasma_a7bdbdd48e9e5660267ea4d9bc12f4b3c}\label{classFantasma_a7bdbdd48e9e5660267ea4d9bc12f4b3c}} 
+\index{Fantasma@{Fantasma}!getElemento@{getElemento}}
+\index{getElemento@{getElemento}!Fantasma@{Fantasma}}
+\doxysubsubsection{\texorpdfstring{getElemento()}{getElemento()}}
+{\footnotesize\ttfamily char Fantasma\+::get\+Elemento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função\+: get\+Elemento Uso\+: c = \mbox{\hyperlink{classFantasma_a7bdbdd48e9e5660267ea4d9bc12f4b3c}{get\+Elemento()}};. 
+
+\begin{DoxyReturn}{Returns}
+retorno\+: (char) Retorna o caractere que o fantasma está em cima, para evitar do fantasma modificar o labirinto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFantasma_ada4b120b7f6ca9e3d6effd9faf2f7279}\label{classFantasma_ada4b120b7f6ca9e3d6effd9faf2f7279}} 
+\index{Fantasma@{Fantasma}!move\_fantasma@{move\_fantasma}}
+\index{move\_fantasma@{move\_fantasma}!Fantasma@{Fantasma}}
+\doxysubsubsection{\texorpdfstring{move\_fantasma()}{move\_fantasma()}}
+{\footnotesize\ttfamily int Fantasma\+::move\+\_\+fantasma (\begin{DoxyParamCaption}\item[{char}]{caractere }\end{DoxyParamCaption})}
+
+
+
+Função\+: move\+\_\+fantasma Uso\+: c = move\+\_\+fantasma( x, y);. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caractere} & \+: (char) Essa função recebe um caractere \textquotesingle{}wasd\textquotesingle{} referente a próxima direção do fantasma Nessa função é possível mudar a posição do fantasma a partir de um parametro caractere que repreenta a proxima posição a ser seguida pelo pacman \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+retorno\+: Retorna (int) 1 caso seja possível mover o fantasma para aquela posição no labirinto e (int) 0 caso contrário 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFantasma_a9cd407134e364089766a1b6acc8c4e9a}\label{classFantasma_a9cd407134e364089766a1b6acc8c4e9a}} 
+\index{Fantasma@{Fantasma}!setElemento@{setElemento}}
+\index{setElemento@{setElemento}!Fantasma@{Fantasma}}
+\doxysubsubsection{\texorpdfstring{setElemento()}{setElemento()}}
+{\footnotesize\ttfamily void Fantasma\+::set\+Elemento (\begin{DoxyParamCaption}\item[{char}]{elemento }\end{DoxyParamCaption})}
+
+
+
+Função\+: set\+Elemento Uso\+: set\+Elemento(elemento);. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \+: (char) Essa função recebe um caractere referente a posição do mapa que será ocupada pelo fantasma \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+fantasma.\+h\item 
+fantasma.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,20 @@
+- - - > Se der certo e se a palavra ainda não foi usada:
+
+coloca que ela ja foi usada
+Salva a posição anterior
+Salva o número da palavra
+Empilha a palavra
+
+
+- - - >  Se der errado
+backtracking:
+    - - - > 
+- - - > coloca que a palavra não foi usada
+- - - > Coloca a posição anterior à palavra na tabela
+- - - > desempilha
+- - - > acho que tenho que fazer j = j-2
+
+
+
+- - - > dar os frees
+

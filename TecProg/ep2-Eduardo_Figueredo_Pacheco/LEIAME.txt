@@ -1,0 +1,87 @@
+AUTOR:
+
+Nome: Eduardo Figueredo Pacheco
+Nº USP: 13672832
+e-mail: eduardofp@usp.br
+
+
+DESCRIÇÃO:
+
+ O programa em bash realizado neste projeto tem característica de verificação contínua por intervalo de tempo sobre os servidores do
+  dispositivo em que o código está sendo executado. Tanto como a data e hora atuais, o programa também mostra o 
+
+
+COMO EXECUTAR:
+
+	No diretório do arquivo.sh:
+    escrever ./ep2.sh seguido dos valores que se deseja para:
+    1º:  tempo de verificação do sistema (um número)
+    2º:  O arquivo no qual se quer salvar as verificações (uma sequencia de caracteres sem espaço " ")
+    3º:  O limite de porcentagem de uso da CPU (um número)
+    4º:  O token do BOT que foi implementado no projeto 
+    5º:  O ID do BOT implementado no projeto
+
+    EXEMPLO: "./ep2.sh 1 9 75.0 5409764937:AAGyKCHRO1zpD08hbJHwwJt1V2OitvfnpCM 1239604425"
+
+
+
+TESTES:
+
+Realize os passos abaixo para notar se o programa está funcionando nomrlamente.
+A principio, você pode executar o programa e começar a manipular um servidor para verificar a reação do programa.
+1º = suba um servidor com o comando nc -k -l -p 45052
+2º = em outro terminal ou outra máquina, conecte o servidor utilizando nc 127.0.0.1 45052
+  - - > Antes do segundo passo, uma possível saída seria:
+        "09/10/2022 13:13:56 
+        O Servidor está fora do ar."
+  - - > Após o segundo passo, uma possível saída seria:
+        "09/10/2022 17:40:30
+        127.0.0.1
+        84.4"
+3º = para encerrar o servidor, pressione control+C no terminal em que foi aberto.
+4º = para encerrar o programa,pressione control+C no terminal em que foi executado.
+
+"
+09/10/2022 17:40:30
+127.0.0.1
+porcentagem da CPU ociosa: 84.4
+09/10/2022 17:40:35
+127.0.0.1
+porcentagem da CPU ociosa: 94.1
+09/10/2022 17:40:40
+127.0.0.1
+porcentagem da CPU ociosa: 82.2
+09/10/2022 17:40:44
+127.0.0.1
+porcentagem da CPU ociosa: 82.0
+09/10/2022 17:40:48
+porcentagem da CPU ociosa: 83.0
+O Servidor está fora do ar
+09/10/2022 17:40:53
+porcentagem da CPU ociosa: 81.2
+O Servidor está fora do ar
+"
+
+--- > Para garantir que o programa mostre sempre sua atividade e mostre as características do servidor e ociosidade da CPU, basta colocar, na 3ª entrada - - > O limite de porcentagem de uso da CPU (um número)
+igual a 100.0 assim sempre será possível ver o que estáacontecendo dentro daquele intervalo de tempo determinado também pelo usuário.
+
+
+- - > A cada x segundos, variável decidida pelo usuário na hora de executar o programa, o porgrama ira informar horarios e demais Informações sobre o servidor,
+todos os dados e numeros medidos serão mantios em um arquivo de nome também decidido pelo usuário. Alem disso, a cada 100 repetições do ciclo, o programa realiza
+uma média das porcentagens de ociosidade da CPU, tal valor estará presente somente no arquivo.
+
+DEPENDˆENCIAS:
+
+
+	Versão do montador:
+            x86_64
+
+	Versão do compilador: 
+            gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0
+            uname (GNU coreutils) 8.32
+
+	Informações do SO:
+            ting-system
+            GNU/Linux Ubuntu
+
+

@@ -1,0 +1,81 @@
+12 8
+-1 -1 0 -1 -1 0 -1 -1
+0 0 0 0 0 0 0 0
+-1 0 0 0 0 0 0 0
+-1 0 0 -1 0 0 -1 0
+0 0 -1 0 0 0 -1 0
+-1 0 0 0 -1 0 0 0
+-1 0 -1 0 0 0 0 0 
+-1 0 0 0 -1 0 -1 0
+-1 0 0 -1 0 0 0 0
+0 0 0 0 0 -1 0 0
+0 0 0 0 -1 0 0 0
+-1 0 0 0 0 0 0 0
+32
+ab
+ai
+al
+am
+bo
+dm
+es
+et
+it
+mo
+ms
+cao
+dam
+mud
+res
+tri
+moa
+boca
+banc
+indo
+mito
+naus
+trem
+adido
+toast
+atice
+neonato
+remessa
+permitir
+itamaraca
+enaltecedor
+robustecida
+5 4
+-1 0 0 0
+0 0 0 0
+0 0 -1 0
+0 0 0 0
+0 -1 0 0
+11
+pau
+ad
+antas
+carn
+casa
+do
+lado
+lua
+os
+soda
+ur
+3 3
+-1 0 0
+0 0 0
+0 -1 0
+5
+ab
+au
+bug
+la
+lua
+2 2
+0 0
+0 0
+2
+au
+ua
+0 0
